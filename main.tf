@@ -179,5 +179,5 @@ resource "aws_iam_group_membership" "DevelopersGroupMembership" {
     for v in aws_iam_user.developers_iam_users : v.name
   ]
 
-  group = aws_iam_group.S3-Admins.name
+  group = aws_iam_group.S3-PowerUsers.name
 }
